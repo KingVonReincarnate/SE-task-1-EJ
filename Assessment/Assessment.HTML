@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+
+.title {
+
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.black-cat{
+    border: 15px solid salmon;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+    background-color: aliceblue;
+
+}
+
+body{
+
+    background-color: black;
+
+}
+
+.upload{
+
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#e7baff, #c2b6d9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cool-box{
+
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#e7baff, #c2b6d9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#drop-area{
+
+    width: 300px;
+    height: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+#img-view {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+#poop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-view img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#img-view p {
+    margin-top: 10px;
+}
+
+#input-file {
+    display: none;
+}
+
+<!--Those were all of the classes required to make this page work-->
+
+</style>
+</head>
+
+<body>
+<h1 class="title">Make your own trading card!</h1>
+
+<div class="black-cat">Instructions: </br>
+    Put your photo in! </br>
+    After that, type in your description! </br>
+    Then, you can make a few more changes! </br>
+    Finally, screenshot your new trading card! </br>
+</div>
+
+<!-- Up there's the description and title, each with their own classes. I love classes-->
+
+    <div class="upload">
+        <label for="input-file" id="drop-area">
+            <div id="poop" contenteditable="true">Card Name?</div>
+            <input type="file" accept="image/*" id="input-file">
+            <div id="img-view">
+                <img src="icon.png">
+            </div>
+            <div id="poop" contenteditable="true">Drag and Drop your Image above! After that, edit this text to make the  description!</div>
+        </label>
+    </div>
+
+<!-- There's the code for uploading the image. The displaying code is in the javascript section though -->
+
+<script src="Script.js"></script>
+
+<!-- You know... ^^^ That one ^^^ Right there -->
+
+</body>
+</html>
